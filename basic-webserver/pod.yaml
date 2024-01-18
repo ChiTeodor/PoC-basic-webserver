@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: basic-webserver
+  labels:
+    app: basic-webserver
+spec:
+  containers:
+  - name: basic-webserver
+    image: chiteodor/basic-webserver:latest
+    ports:
+    - containerPort: 80
+  restartPolicy: Always
